@@ -33,14 +33,12 @@ function App() {
 	if (!auth) return <LoginPage />;
 
 	return (
-		<Router>
-		  <Routes>
+		<Routes>
 			<Route path="/" element={<HomePage />} />
 			<Route path="/documents" element={<DocumentsPage />} />
 			<Route path="/search" element={<SearchPage />} />
 			<Route path="/document/:id" element={<DocumentDetailPage />} />
-		  </Routes>
-		</Router>
+		</Routes>
 	);
 }
 
