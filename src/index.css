@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Style mặc định cho dark theme */
+[data-theme="dark"] {
+  background-color: #141414;
+  color: #ffffff;
+}
+
+/* Style cho light theme */
+[data-theme="light"] {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Ví dụ thay đổi style cho các thành phần khác */
+[data-theme="dark"] .ant-layout {
+  background: #141414;
+}
+
+[data-theme="light"] .ant-layout {
+  background: #f0f2f5;
+}
