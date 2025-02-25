@@ -51,16 +51,14 @@ const DocumentDetailPage = () => {
   return (
     <MainLayout>
       <Row gutter={16}>
-        {/* Sidebar: Mục lục */}
-        <Col span={6}>
+        <Col span={4}>
           <Anchor affix>
             {headings.map((heading) => (
               <AnchorLink key={heading.id} href={`#${heading.id}`} title={heading.title} />
             ))}
           </Anchor>
         </Col>
-        {/* Nội dung document */}
-        <Col span={18}>
+        <Col span={20}>
           <Card title={document.name}>
             <div dangerouslySetInnerHTML={{ __html: document.content }} />
           </Card>

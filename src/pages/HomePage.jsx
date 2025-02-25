@@ -22,7 +22,7 @@ const HomePage = () => {
     <MainLayout>
       <Row gutter={[16, 16]}>
         {Object.keys(categories).map((categoryName, index) => (
-          <Col key={index} span={6}>
+          <Col key={index} span={6} xs={24} sm={12} lg={8} xl={6}>
             <div>
               <Title level={3}>{categoryName}</Title>
               <List

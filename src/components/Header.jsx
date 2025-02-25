@@ -31,11 +31,16 @@ const HeaderComponent = () => {
         alignItems: 'center',
       }}
     >
-      <Menu theme="dark" mode="horizontal" style={{ flex: 1 }}>
-        <Menu.Item key="1">
-          <Link to="/">Home</Link>
-        </Menu.Item>
-      </Menu>
+      <Menu
+        theme="dark"
+        mode="horizontal"
+        items={[
+          {
+            key: '1',
+            label: <Link to="/">Home</Link>,
+          }
+        ]}
+      />
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <Search
           placeholder="input search text"

@@ -45,7 +45,7 @@ const SearchPage = () => {
                     <Col key={index} span={6}>
                         <div>
                             <Title level={4}>{categoryName}</Title>
-                            <List size="small" dataSource={filteredCategories[categoryName]} renderItem={(item) => <List.Item><Link to={`/document/${encodeURIComponent(item.id)}`}>{item.name}</Link></List.Item>
+                            <List size="small" dataSource={filteredCategories[categoryName]} renderItem={(item) => <List.Item><Link to={`/document/${encodeURIComponent(item.id)}?category=${encodeURIComponent(categoryName)}`}>{item.name}</Link></List.Item>
                             }
                             />
                         </div>

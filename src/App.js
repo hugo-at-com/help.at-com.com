@@ -1,7 +1,6 @@
 // App.jsx
 import React, { useEffect } from "react";
 import {
-	BrowserRouter as Router,
 	Routes,
 	Route
 } from "react-router-dom";
@@ -28,7 +27,7 @@ function App() {
 			console.error("Lỗi khi xác thực:", error);
 			setAuth(false);
 		});
-  	}, []);
+  	}, [auth]);
 
 	if (!auth) return <LoginPage />;
 
